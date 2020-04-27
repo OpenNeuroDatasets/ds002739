@@ -1,3 +1,5 @@
+OpenNeuro curator note: This dataset was previously accessible at ds001512. The dataset was reuploaded due to privacy considerations. 
+
 EEG
 
 EEG_data contains preprocessed EEG data (see below for preprocessing details). EEG_events contains event times and behavioural data. There is a file for each of the two experimental sessions of each subject.
@@ -55,4 +57,3 @@ Next, we corrected for cardiac-related (i.e., ballistocardiogram, BCG) artifacts
 
 METHODS FOR FMRI PREPROCESSING
 The first 10 volumes prior to task onset were discarded from each fMRI run to ensure a steady-state MR signal. Additionally, 13 volumes were discarded from the post-task period at the end of each block. The remaining 771 volumes were used for statistical analyses. Pre-processing of the MRI data was performed using the FEAT tool of the FSL software (http://www.fmrib.ox.ac.uk/fsl) and included slice-timing correction, high-pass filtering (>100 s), and spatial smoothing (with a Gaussian kernel of 8 mm full width at half maximum), and head motion correction (using the MCFLIRT tool). The motion correction preprocessing step generated motion parameters which were subsequently included as regressors of no interest in the general linear model (GLM) analysis (see fMRI analysis below). Brain extraction of the structural and functional images was performed using the Brain Extraction tool (BET). Registration of EPI images to standard space (Montreal Neurological Institute, MNI) was performed using the Non-linear Image Registration Tool with a 10-mm warp resolution. The registration procedure involved transforming the EPI images into an individual's high-resolution space (with a linear, boundary-based registration algorithm (Greve and Fischl, 2009) prior to transforming to standard space. Registration outcome was visually checked for each subject to ensure correct alignment.
-
