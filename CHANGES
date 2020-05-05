@@ -1,3 +1,5 @@
+1.0.0 2020-05-05
+  - OpenNeuro reupload
 2.0.0	2019-01-08
 
 	- Major correction: All fMRI data files ("..._bold.nii.gz") have been replaced with their corresponding preprocessed versions, correcting for original upload mistake. Please note that all previous (i.e., unfiltered) versions of these data were temporally misaligned with the fMRI events files (due to the extra initial volumes in the timeseries, otherwise discarded during preprocessing). This issue is now resolved.
